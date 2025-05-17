@@ -1,0 +1,419 @@
+/* الأساسيات */
+:root {
+    --gold: #D4AF37;
+    --navy: #D4AF37;
+    --black: #000000;
+    --cream: #FFF8E1;
+    --dark-gold: #B8860B;
+    --gray: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* الهيدر */
+.about-header {
+    background: linear-gradient(135deg, var(--black) 0%, var(--navy) 100%);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid var(--gold);
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.cart-icon {
+    background: var(--gold);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--black);
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+/* البانر الرئيسي */
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/about-bg.jpg') center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--gold);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* المحتوى الرئيسي */
+.about-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.our-mission {
+    background-color: var(--gray);
+    padding: 3rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.our-mission h2 {
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.our-mission h2 i {
+    color: var(--gold);
+    margin-left: 10px;
+}
+
+.our-mission p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* فريق العمل */
+.team-section {
+    margin-bottom: 4rem;
+}
+
+.team-section h2 {
+    text-align: center;
+    color: var(--navy);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.team-section h2 i {
+    color: var(--gold);
+    margin-left: 10px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.member-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.social-links {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background: rgba(212, 175, 55, 0.9);
+    padding: 1rem;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.team-member:hover .social-links {
+    bottom: 0;
+}
+
+.social-links a {
+    color: white;
+    background: rgba(0,0,0,0.2);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--navy);
+    transform: translateY(-3px);
+}
+
+.team-member h3 {
+    margin-top: 1.5rem;
+    color: var(--navy);
+    font-size: 1.3rem;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* الإحصائيات */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--black) 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* الفوتر */
+.about-footer {
+    background: linear-gradient(135deg, var(--black) 0%, var(--navy) 100%);
+    color: white;
+    padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+    padding-right: 5px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    color: white;
+    background: rgba(255,255,255,0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    background: var(--gold);
+    color: var(--black);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* التكيف مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        margin: 0.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+nav a.active {
+    border-bottom: 2px solid #D4AF37;
+}
+
+/* تنسيق شريط التنقل */
+.main-nav {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    margin: auto;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #e58e26;
+}
+.logo-img {
+    width: 100px;  /* اضبط حسب حجم الصورة */
+    height: auto;
+    border-radius: 50%;  /* إذا كنت تريدها دائرية */
+}
+.logo-text {
+    margin: 0;
+    color: #e58e26;
+    font-size: 1.5rem;
+}
+
+.logo-text span {
+    color: white;
+}
+.product{
+    image-rendering: auto;
+}

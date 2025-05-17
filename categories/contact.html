@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - الفراعنة</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <!-- نفس الهيدر الرئيسي -->
+        <nav class="main-nav">
+            <div class="logo-container">
+                <img src="../imgs/al_loogo-removebg-preview.png" alt="لوجو الفراعنة ستورز" class="logo-img">
+                <!-- <h1 class="logo-text">الفراعنة <span>ستورز</span></h1> -->
+            </div>
+            <ul>
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="./women.html">الحريمي</a></li>
+                <li><a href="./kids.html">الأطفال</a></li>
+                <li><a href="./new.html">الكوليكشن الجديد</a></li>
+                <li><a href="./about.html">من نحن</a></li>
+                <li><a href="./contact.html">تواصل معنا</a></li>
+                <input type="text" placeholder="ابحث عن عباية...">
+                <a href="../cart.html" class="cart-icon">🛒سلة الطلبات (<span id="cart-count">0</span>)</a>
+            </ul>
+        </nav>
+    
+    </header>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- بانر الصفحة -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>نتطلع لسماع منك</h1>
+            <p>فريق الدعم لدينا متاح 24ساعة لمساعدتك في أي استفسار</p>
+        </div>
+    </section>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="contact-container">
+        <!-- نموذج التواصل -->
+        <section class="contact-form">
+            <h2><i class="fas fa-envelope"></i> أرسل رسالة</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">الموضوع</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">اختر الموضوع</option>
+                        <option value="order">استفسار عن طلب</option>
+                        <option value="product">استفسار عن منتج</option>
+                        <option value="return">إرجاع منتج</option>
+                        <option value="other">استفسار آخر</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">إرسال الرسالة</button>
+            </form>
+        </section>
+
+        <!-- معلومات التواصل -->
+        <section class="contact-info">
+            <h2><i class="fas fa-info-circle"></i> معلومات التواصل</h2>
+            
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h3>العنوان</h3>
+                    <p>الهرم - شبرامنت </p>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <h3>الهاتف</h3>
+                    <p>+20 1554889377</p>
+                    <p>+20 37983596</p>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@alfra3na.com</p>
+                    <p>support@alfra3na.com</p>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h3>ساعات العمل</h3>
+                    <p>السبت - الخميس: 9 ص - 10 م</p>
+                    <p>الجمعة: 1 م - 10 م</p>
+                </div>
+            </div>
+            
+            <div class="social-media">
+                <h3>تابعنا على</h3>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61574955834859&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/amr_nasrallhe/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wsend.co/201554889377"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- خريطة الموقع -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.651715456211!2d31.23594751511493!3d30.04455798188376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458409e8f5d5b9f%3A0x5f5e5e5e5e5e5e5e!2sCairo%2C%20Egypt!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="contact-footer">
+        <div class="footer-content">
+            <div class="footer-logo">الفراعنة ستورز</div>
+            <div class="footer-links">
+                <a href="#">سياسة الخصوصية</a>
+                <a href="#">شروط الاستخدام</a>
+                <a href="#">الأسئلة الشائعة</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61574955834859&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amr_nasrallhe/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wsend.co/201554889377"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 الفراعنة ستورز. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>عربة التسوق - الفراعنة ستورز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    <!-- الشريط العلوي المعدل -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- اللوجو -->
+            <div class="logo-container">
+                <img src="./imgs/al_loogo-removebg-preview.png" alt="الفراعنة ستورز" class="logo-img">
+                <!-- <h1 class="logo-text">الفراعنة <span>ستورز</span></h1> -->
+            </div>
+            
+            <!-- شريط البحث -->
+            <div class="search-container">
+                <input type="text" placeholder="ابحث عن منتجات...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <!-- القوائم -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="./index.html">الرئيسية</a></li>
+                    <li><a href="./categories/women.html">الحريمي</a></li>
+                    <li><a href="./categories/kids.html">الأطفال</a></li>
+                    <li><a href="./categories/new.html">الكوليكشن الجديد</a></li>
+                    <li><a href="./categories/about.html">من نحن</a></li>
+                    <li><a href="./categories/contact.html">تواصل معنا</a></li>
+                    <li><a href="./cart.html" class="active"><i class="fas fa-shopping-cart"></i> عربة التسوق</a></li>
+                </ul>
+            </nav>
+            
+            <!-- زر الواتساب -->
+            <div class="whatsapp-btn" onclick="openWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                <span>اطلب عبر واتساب</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- محتوى صفحة السلة -->
+    <main class="cart-container">
+        <h1 class="cart-title"><i class="fas fa-shopping-cart"></i> عربة التسوق</h1>
+        
+        <div class="cart-grid">
+            <!-- عناصر السلة -->
+            <section class="cart-items" id="cartItems">
+                <!-- سيتم ملؤها بالمنتجات عبر JavaScript -->
+            </section>
+            
+            <!-- ملخص الطلب -->
+            <section class="order-summary">
+                <h2>ملخص الطلب</h2>
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>عدد المنتجات:</span>
+                        <span id="itemsCount">0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>المجموع:</span>
+                        <span id="subtotal">0 ج.م</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>الإجمالي:</span>
+                        <span id="total">0 ج.م</span>
+                    </div>
+                </div>
+                
+                <button class="checkout-btn">إتمام الشراء</button>
+                
+                <div class="whatsapp-box" id="whatsappBox">
+                    <h3>أو اطلب عبر واتساب</h3>
+                    <div class="form-group">
+                        <input type="text" id="clientName" placeholder="اسمك بالكامل">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="clientPhone" placeholder="رقم الهاتف">
+                    </div>
+                    <button class="whatsapp-submit" onclick="sendWhatsAppOrder()">
+                        <i class="fab fa-whatsapp"></i> إرسال الطلب
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="main-footer">
+        <!-- نفس الفوتر السابق -->
+    </footer>
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>

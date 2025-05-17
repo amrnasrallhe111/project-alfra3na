@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f9f3ee; /* لون خلفية متناسق مع الموقع */
+    color: #333;
+}
+
+.payment-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.payment-page h1 {
+    text-align: center;
+    color: #5d4037; /* لون بني فرعوني */
+    margin-bottom: 40px;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.method-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: 1px solid #e0d6c2; /* لون حدود متناسق */
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+}
+
+.method-card img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.method-card h3 {
+    color: #5d4037;
+    margin: 10px 0;
+}
+
+.method-card p {
+    color: #777;
+    font-size: 14px;
+}

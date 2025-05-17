@@ -1,0 +1,519 @@
+/* التنسيقات العامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    color: #333;
+}
+
+.collection-banner {
+    background: linear-gradient(rgba(0,0,0,0.6), url('../imgs/of2.jpg'));
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* تنسيقات المنتجات */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #D4AF37;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.price .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
+
+.price .new-price {
+    color: #c00;
+    font-weight: bold;
+}
+nav a.active {
+    border-bottom: 2px solid #D4AF37;
+}
+
+/* تنسيق شريط التنقل */
+.main-nav {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  margin: auto;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+/* .main-nav a:hover {
+    color: #e58e26;
+} */
+.logo-img {
+    width: 100px;  /* اضبط حسب حجم الصورة */
+    height: auto;
+    border-radius: 50%;  /* إذا كنت تريدها دائرية */
+}
+.logo-text {
+    margin: 0;
+    color: #e58e26;
+    font-size: 1.5rem;
+}
+
+.logo-text span {
+    color: white;
+}
+.product{
+    image-rendering: auto;
+}
+
+
+
+
+
+
+/* ======== الأساسيات ======== */
+:root {
+    --gold: #D4AF37;     /* الذهبي الرئيسي */
+    --navy: #D4AF37;     /* كحلي */
+    --black: #000000;    /* أسود */
+    --cream: #FFF8E1;    /* كريمي */
+    --dark-gold: #B8860B; /* ذهبي غامق */
+  }
+  
+  body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ======== الهيدر والتنقل ======== */
+  header {
+    background: linear-gradient(135deg, var(--black) 0%, var(--navy) 100%);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    color: var(--gold);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: all 0.3s;
+  }
+  
+  .nav-links a.active {
+    border-bottom: 2px solid var(--gold);
+  }
+  
+  .cart-icon {
+    background: var(--gold);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--black);
+    font-weight: bold;
+  }
+  
+  /* ======== بانر الكوليكشن ======== */
+  .collection-banner {
+    background: 
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+      url('../images/collection-bg.jpg') center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .banner-content {
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  .banner-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: var(--gold);
+  }
+  
+  .banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .cta-button:hover {
+    background: var(--dark-gold);
+    transform: translateY(-3px);
+  }
+  
+  /* ======== قسم المنتجات ======== */
+  .new-products {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+    color: var(--navy);
+  }
+  
+  .collection-counter {
+    background: var(--navy);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product-card h3 {
+    padding: 1rem 1rem 0;
+    color: var(--navy);
+    font-size: 1.2rem;
+  }
+  
+  .price {
+    padding: 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 0.5rem;
+  }
+  
+  .new-price {
+    color: #c00;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .add-to-cart {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0 1rem 1rem;
+    padding: 0.7rem;
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background: var(--dark-gold);
+  }
+  
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--navy);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  /* ======== قسم العروض ======== */
+  .special-offer {
+    background: linear-gradient(45deg, var(--navy) 0%, var(--black) 100%);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .offer-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .offer-card h3 {
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  
+  .offer-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .coupon {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--black);
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 2px;
+  }
+  
+  /* ======== التكيف مع الشاشات الصغيرة ======== */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .nav-links {
+      margin-top: 1rem;
+    }
+    
+    .banner-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .collection-counter {
+      margin-top: 1rem;
+    }
+  }
+
+
+
+
+
+
+
+  .scrollable-products {
+    max-width: 1200px;
+    margin: 4rem auto;
+    position: relative;
+}
+
+.product-scroll-container {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* إخفاء شريط التمرير في IE */
+    scrollbar-width: none;     /* إخفاء شريط التمرير في Firefox */
+}
+
+.product-scroll-container::-webkit-scrollbar {
+    display: none; /* إخفاء شريط التمرير في Chrome/Safari */
+}
+
+.product-scroll-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--gold);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.scroll-btn.left {
+    left: -50px;
+}
+
+.scroll-btn.right {
+    right: -50px;
+}
+
+.collection-banner {
+    background-attachment: fixed; /* السر في هذه الخاصية */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* طبقة شبه شفافة للتأثير */
+.collection-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.like-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ff4757;
+    transition: all 0.3s;
+    z-index: 5;
+}
+
+.like-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.like-btn.liked {
+    color: white;
+    background: #ff4757;
+}
+
+.like-count {
+    font-size: 0.8rem;
+    margin-left: 3px;
+}

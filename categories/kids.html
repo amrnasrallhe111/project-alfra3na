@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملابس  الأطفال - الفراعنة</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/kids.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <!-- نفس الهيدر الرئيسي -->
+        <nav class="main-nav">
+            <div class="logo-container">
+                <img src="../imgs/al_loogo-removebg-preview.png" alt="لوجو الفراعنة ستورز" class="logo-img">
+                <!-- <h1 class="logo-text">الفراعنة <span>ستورز</span></h1> -->
+            </div>
+            <ul>
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="./women.html">الحريمي</a></li>
+                <li><a href="./kids.html">الأطفال</a></li>
+                <li><a href="./new.html">الكوليكشن الجديد</a></li>
+                <li><a href="./about.html">من نحن</a></li>
+                <li><a href="./contact.html">تواصل معنا</a></li>
+                <input type="text" placeholder="ابحث عن عباية...">
+                <a href="../cart.html" class="cart-icon">🛒سلة الطلبات (<span id="cart-count">0</span>)</a>
+            </ul>
+        </nav>
+    
+    </header>
+
+
+    <!-- بانر القسم -->
+    <section class="kids-banner">
+        <div class="banner-content animate__animated animate__fadeIn">
+            <h1>أجمل العبايات للأطفال</h1>
+            <p>تصاميم مريحة وآمنة لصغارك</p>
+        </div>
+    </section>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="kids-container">
+        <!-- القائمة الجانبية -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-child"></i> تصفح القسم</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-title">حسب العمر <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">1-3 سنوات</a></li>
+                        <li><a href="#">4-6 سنوات</a></li>
+                        <li><a href="#">7-9 سنوات</a></li>
+                        <li><a href="#">10-12 سنة</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-title">حسب النوع <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">عبايات بنات</a></li>
+                        <li><a href="#">عبايات أولاد</a></li>
+                        <li><a href="#">عبايات مواليد</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-title">حسب المناسبة <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">للحضانة والمدرسة</a></li>
+                        <li><a href="#">للحفلات والأعياد</a></li>
+                        <li><a href="#">للصيف</a></li>
+                        <li><a href="#">للشتاء</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-title">المجموعات <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">مجموعات أخوة</a></li>
+                        <li><a href="#">مجموعات توأم</a></li>
+                    </ul>
+                </li>
+                <li class="filter-section">
+                    <h4><i class="fas fa-filter"></i> تصفية حسب</h4>
+                    <div class="filter-group">
+                        <h5>اللون</h5>
+                        <div class="color-filters">
+                            <span class="color-filter pink" title="وردي"></span>
+                            <span class="color-filter blue" title="أزرق"></span>
+                            <span class="color-filter purple" title="بنفسجي"></span>
+                            <span class="color-filter red" title="أحمر"></span>
+                            <span class="color-filter green" title="أخضر"></span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h5>المقاس</h5>
+                        <div class="size-filters">
+                            <span class="size-filter">2Y</span>
+                            <span class="size-filter">4Y</span>
+                            <span class="size-filter">6Y</span>
+                            <span class="size-filter">8Y</span>
+                            <span class="size-filter">10Y</span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h5>السعر</h5>
+                        <div class="price-range">
+                            <input type="range" min="50" max="500" value="250" class="slider">
+                            <div class="price-values">
+                                <span>50 ج.م</span>
+                                <span>500 ج.م</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- قسم المنتجات -->
+        <section class="products-section">
+            <div class="section-header">
+                <h2>عبايات الأطفال</h2>
+                <div class="sort-options">
+                    <select id="sort">
+                        <option value="default">ترتيب حسب: الافتراضي</option>
+                        <option value="price-low">السعر: من الأقل للأعلى</option>
+                        <option value="price-high">السعر: من الأعلى للأقل</option>
+                        <option value="age-low">العمر: من الأصغر للأكبر</option>
+                        <option value="age-high">العمر: من الأكبر للأصغر</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- المنتج 1 -->
+                <div class="product-card animate__animated animate__fadeInUp">
+                    <div class="product-badge new">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/k7.png" alt="عباية أطفال وردية">
+                        <div class="product-actions">
+                            <button class="quick-view" title="عرض سريع"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="إضافة للمفضلة"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="age-tag">4-6 سنوات</div>
+                        <h3>عباية اطفالي فرعونية  </h3>
+                        <div class="price">
+                            <span class="current-price">249 ج.م</span>
+                            <span class="old-price">299 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <!-- المنتج 2 -->
+                <div class="product-card animate__animated animate__fadeInUp">
+                    <div class="product-badge bestseller">الأكثر مبيعًا</div>
+                    <div class="product-image">
+                        <img src="../imgs/k8.png" alt="عباية أطفال زرقاء">
+                        <div class="product-actions">
+                            <button class="quick-view" title="عرض سريع"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="إضافة للمفضلة"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="age-tag">7-9 سنوات</div>
+                        <h3>عباية اطفالي  فرعونية مطرزة </h3>
+                        <div class="price">
+                            <span class="current-price">279 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card animate__animated animate__fadeInUp">
+                    <div class="product-badge bestseller">الأكثر مبيعًا</div>
+                    <div class="product-image">
+                        <img src="../imgs/k9.png" alt="عباية أطفال زرقاء">
+                        <div class="product-actions">
+                            <button class="quick-view" title="عرض سريع"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="إضافة للمفضلة"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="age-tag">7-9 سنوات</div>
+                        <h3>عباية اطفالي  فرعونية مطرزة </h3>
+                        <div class="price">
+                            <span class="current-price">279 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card animate__animated animate__fadeInUp">
+                    <div class="product-badge bestseller">الأكثر مبيعًا</div>
+                    <div class="product-image">
+                        <img src="../imgs/k12.jpg" alt="عباية أطفال زرقاء">
+                        <div class="product-actions">
+                            <button class="quick-view" title="عرض سريع"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="إضافة للمفضلة"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="age-tag">7-9 سنوات</div>
+                        <h3>عباية اطفالي  فرعونية مطرزة </h3>
+                        <div class="price">
+                            <span class="current-price">279 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card animate__animated animate__fadeInUp">
+                    <div class="product-badge new">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/k13.jpg" alt="عباية أطفال وردية">
+                        <div class="product-actions">
+                            <button class="quick-view" title="عرض سريع"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="إضافة للمفضلة"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="age-tag">4-6 سنوات</div>
+                        <h3>عباية اطفالي فرعونية  </h3>
+                        <div class="price">
+                            <span class="current-price">249 ج.م</span>
+                            <span class="old-price">299 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card animate__animated animate__fadeInUp">
+                    <div class="product-badge new">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/k14.jpg" alt="عباية أطفال وردية">
+                        <div class="product-actions">
+                            <button class="quick-view" title="عرض سريع"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist" title="إضافة للمفضلة"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="age-tag">4-6 سنوات</div>
+                        <h3>عباية اطفالي فرعونية  </h3>
+                        <div class="price">
+                            <span class="current-price">249 ج.م</span>
+                            <span class="old-price">299 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <!-- باقي المنتجات بنفس الهيكل -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- قسم مميزات المنتجات -->
+    <section class="features-section">
+        <div class="feature-card">
+            <i class="fas fa-check-circle"></i>
+            <h4>أقمشة آمنة</h4>
+            <p>جميع المنتجات مصنوعة من أقمشة طبيعية آمنة للبشرة الحساسة</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-truck"></i>
+            <h4>شحن سريع</h4>
+            <p>توصيل خلال 24-48 ساعة في القاهرة والجيزة</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-exchange-alt"></i>
+            <h4>إرجاع سهل</h4>
+            <p>إمكانية الإرجاع خلال 14 يومًا من الاستلام</p>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="kids-footer">
+        <div class="footer-content">
+            <div class="footer-logo">الفراعنة ستورز</div>
+            <div class="footer-links">
+                <a href="../Privacy Policy.pdf">سياسة الخصوصية</a>
+                <a href="../Privacy Policy.pdf">شروط الاستخدام</a>
+                <a href="../Frequently asked questions.pdf">الأسئلة الشائعة</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61574955834859&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amr_nasrallhe/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wsend.co/201554889377"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 الفراعنة ستورز. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/kids.js"></script>
+</body>
+</html>

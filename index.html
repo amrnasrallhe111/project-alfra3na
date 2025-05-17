@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفراعنة  ستورز متجر  </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <button class="toggle-sidebar" id="toggleSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-container">
+              <img  src="./imgs/al_loogo-removebg-preview.png"لوجو الفراعنة ستورز" class="logo-img">
+          </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder=" ابحث عن منتج في الفراعنة ستورز ...">
+                <button onclick="performSearch()">بحث</button>
+            </div>
+            <div id="searchResults" class="results-container"></div>
+            <div class="header-icons">
+                <a href="cart.html" class="cart-icon">🛒 <span class="cart-count">0</span></a>  
+            </div>
+            <select id="language-switcher">
+                <option value="ar">العربية 🇪🇬</option>
+                <option value="en">English 🇬🇧</option>
+              </select>
+          </div>
+    </header>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fas fa-list-ul"></i> تصفح الأقسام</h3>
+            <button class="close-sidebar" id="closeSidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="sidebar-menu">
+            <li class="menu-item">
+                <a href="./categories/women.html" class="menu-title">
+                    <i class="fas fa-female"></i> العبايات الحريمي الفرعونية
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="./categories/kids.html" class="menu-title">
+                    <i class="fas fa-child"></i>  عبايات اطفالي فرعونية 
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="./categories/new.html" class="menu-title">
+                    <i class="fas fa-star"></i> الكوليكشن الجديد
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="./categories/new.html" class="menu-title">
+                    <i class="fas fa-fire"></i> العروض الخاصة
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="./categories/women.html" class="menu-title">
+                    <i class="fas fa-gem"></i> العبايات الفاخرة الفرعونية 
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="./categories/rent.html" class="menu-title">
+                    <i class="fas fa-snowflake"></i>  تاجير الملابس new 
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="./categories/Accessories .html" class="menu-title">
+                    <i class="fas fa-sun"></i>   اكسسوارات فرعونية New 
+                </a>
+            </li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <a href="./categories/about.html" class="footer-link">
+                <i class="fas fa-info-circle"></i> من نحن
+            </a>
+            <a href="./categories/pay.html" class="footer-link">
+                <i class="fas fa-info-circle"></i>  طرق الدفع
+            </a>
+            <a href="./categories/contact.html" class="footer-link">
+                <i class="fas fa-phone-alt"></i> اتصل بنا
+            </a>
+        </div>
+    </aside>
+<br>
+<br>
+    <main class="main-content" id="mainContent">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imgs/n1.jpg" class="d-block w-100" alt="الصورة الأولى">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/n7.jpg" class="d-block w-100" alt="الصورة الثانية">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/n3.jpg" class="d-block w-100" alt="الصورة الثالثة">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            </div>
+          </div>
+        <section class="special-offers">
+            <div class="section-header">
+                <h2><i class="fas fa-tag"></i> العروض الخاصة</h2>
+                <a href="./categories/new.html" class="view-all">عرض الكل <i class="fas fa-chevron-left"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/8786.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">999 ج.م</span>
+                            <span class="old-price">2000 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/86.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني اوفيت مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">999 ج.م</span>
+                            <span class="old-price">1999 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/8967967.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني بيضاء مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">1150 ج.م</span>
+                            <span class="old-price">2250 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 50%</div>
+                    <div class="product-image">
+                        <img src="./imgs/1.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3> عباية فرعوني نبيتي    </h3>
+                        <div class="price">
+                            <span class="current-price">1550 ج.م</span>
+                            <span class="old-price">3650 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/96+87+6.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني زهري  مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">960 ج.م</span>
+                            <span class="old-price">1460 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/97.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">799 ج.م</span>
+                            <span class="old-price">1799 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/image_fx (2).jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني بصميم عصري مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">1150 ج.م</span>
+                            <span class="old-price">3000 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/4.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني بالون اللافندر مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">1299 ج.م</span>
+                            <span class="old-price">1699 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/8967967.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3> عبايةبيضاء فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">2999 ج.م</span>
+                            <span class="old-price">5500 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 25%</div>
+                    <div class="product-image">
+                        <img src="./imgs/646.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">1679 ج.م</span>
+                            <span class="old-price">2249 ج.م</span>
+                        </div>
+                        <button class="add-to-ca
+                        rt">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 30%</div>
+                    <div class="product-image">
+                        <img src="./imgs/3.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>كارديجان فرعوني نبيتي مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">4299 ج.م</span>
+                            <span class="old-price">7299 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="./imgs/n1.jpg" alt="عباية سوداء مطرزة">
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">1299 ج.م</span>
+                            <span class="old-price">1569 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم الفئات -->
+        <section class="categories-section">
+            <div class="section-header">
+                <h2><i class="fas fa-th-large"></i> تصفح حسب الفئة</h2>
+            </div>
+            
+            <div class="categories-grid">
+                <a href="./categories/women.html" class="category-card">
+                    <img src="./imgs/4.jpg" alt="عبايات حريمي">
+                    <div class="category-overlay">
+                        <h3>عبايات حريمي</h3>
+                    </div>
+                </a>
+                
+                <a href="./categories/kids.html" class="category-card">
+                    <img src="./imgs/k5.png" alt="عبايات أطفال">
+                    <div class="category-overlay">
+                        <h3>عبايات أطفال فرعونية </h3>
+                    </div>
+                </a>
+                
+                <a href="./categories/rent.html" class="category-card">
+                    <img src="./imgs/t.jpg" alt="عبايات صيفية">
+                    <div class="category-overlay">
+                        <h3>تأجير فساتين (مضاف حديثا)</h3>
+                    </div>
+
+                    <a href="./categories/Accessories .html" class="category-card">
+                        <img src="./imgs/اكسسوارات/1.jpg" alt="عبايات أطفال">
+                        <div class="category-overlay">
+                            <h3>اكسسوارات  فرعونية </h3>
+                        </div>
+                    </a> 
+            </div>
+            
+        </section>
+        
+        <!-- قسم المميزات -->
+        <section class="features-section">
+            <div class="feature-card">
+                <i class="fas fa-truck"></i>
+                <h3>شحن سريع</h3>
+                <p>توصيل خلال 24-48 ساعة</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>إرجاع سهل</h3>
+                <p>إمكانية الإرجاع خلال 14 يوم</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>دفع آمن</h3>
+                <p>طرق دفع متعددة وآمنة</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>دعم فني</h3>
+                <p>خدمة عملاء 24 ساعة</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>الفراعنة ستورز</h3>
+                <p>متجر متخصص في بيع أجود أنواع العبايات الحريمي والأطفال بأحدث التصاميم والألوان.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="./index.html">الرئيسية</a></li>
+                    <li><a href="./categories/Accessories .html">اكسسوارات فرعونية </a></li>
+                    <li><a href="./categories/about.html">من نحن</a></li>
+                    <li><a href="./categories/contact.html">اتصل بنا</a></li>
+                    <li><a href="./Privacy Policy.pdf">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 01554889377</li>
+                    <li><i class="fas fa-envelope"></i> info@alfra3na.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> القاهرة، مصر</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61574955834859&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/amr_nasrallhe/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wsend.co/201554889377"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2025 الفراعنة ستورز. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <Script src="./js/bootstrap.bundle.min.js"></Script> -->
+     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mnia.js"></script>
+</body>
+</html>

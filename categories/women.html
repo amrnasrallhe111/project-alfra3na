@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الحريمي - الفراعنة</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/women.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo-container">
+                <img src="../imgs/al_loogo-removebg-preview.png" alt="لوجو الفراعنة ستورز" class="logo-img">
+                <!-- <h1 class="logo-text">الفراعنة <span>ستورز</span></h1> -->
+            </div>
+            <ul>
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="./women.html">الحريمي</a></li>
+                <li><a href="./kids.html">الأطفال</a></li>
+                <li><a href="./new.html">الكوليكشن الجديد</a></li>
+                <li><a href="./about.html">من نحن</a></li>
+                <li><a href="./contact.html">تواصل معنا</a></li>
+                <input type="text" placeholder="ابحث عن عباية...">
+                <!-- <button onclick="performSearch()">بحث</button> -->
+                <a href="../cart.html" class="cart-icon">🛒سلة الطلبات (<span id="cart-count">0</span>)</a>
+            </ul>
+        </nav>
+    
+    </header>
+
+<br>
+<br>
+    <!-- بانر القسم -->
+    <section class="women-banner">
+        <div class="banner-content">
+            <h1>أحدث صيحات العبايات</h1>
+            <p>تصاميم حصرية تناسب كل المناسبات</p>
+        </div>
+    </section>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="women-container">
+        <!-- القائمة الجانبية -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-list-ul"></i> تصفح القسم</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-title">العبايات الرسمية <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">عبايات سوداء</a></li>
+                        <li><a href="#">عبايات مطرزة</a></li>
+                        <li><a href="#">عبايات ساتان</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-title">العبايات اليومية <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">عبايات قطنية</a></li>
+                        <li><a href="#">عبايات خفيفة</a></li>
+                        <li><a href="#">عبايات صيفية</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-title">العبايات المفتوحة <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">عبايات مفتوحة سادة</a></li>
+                        <li><a href="#">عبايات مفتوحة مطرزة</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-title">العبايات الشتوية <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">عبايات صوف</a></li>
+                        <li><a href="#">عبايات قطيفة</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-title">التصفيات <i class="fas fa-chevron-left"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">خصم حتى 50%</a></li>
+                        <li><a href="#">عروض خاصة</a></li>
+                    </ul>
+                </li>
+                <li class="filter-section">
+                    <h4><i class="fas fa-filter"></i> تصفية حسب</h4>
+                    <div class="filter-group">
+                        <h5>اللون</h5>
+                        <div class="color-filters">
+                            <span class="color-filter black" title="أسود"></span>
+                            <span class="color-filter navy" title="كحلي"></span>
+                            <span class="color-filter burgundy" title="بورجوندي"></span>
+                            <span class="color-filter gray" title="رمادي"></span>
+                            <span class="color-filter beige" title="بيج"></span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h5>المقاس</h5>
+                        <div class="size-filters">
+                            <span class="size-filter">S</span>
+                            <span class="size-filter">M</span>
+                            <span class="size-filter">L</span>
+                            <span class="size-filter">XL</span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h5>السعر</h5>
+                        <div class="price-range">
+                            <input type="range" min="100" max="1000" value="500" class="slider">
+                            <div class="price-values">
+                                <span>100 ج.م</span>
+                                <span>1000 ج.م</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- قسم المنتجات -->
+        <section class="products-section">
+            <div class="section-header">
+                <h2>العبايات الحريمي</h2>
+                <div class="sort-options">
+                    <select id="sort">
+                        <option value="default">ترتيب حسب: الافتراضي</option>
+                        <option value="price-low">السعر: من الأقل للأعلى</option>
+                        <option value="price-high">السعر: من الأعلى للأقل</option>
+                        <option value="newest">الأحدث</option>
+                        <option value="popular">الأكثر مبيعًا</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- المنتج 1 -->
+                <div class="product-card">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/n7.jpg" alt="عباية سوداء مطرزة">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">499 ج.م</span>
+                            <span class="old-price">599 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/n9.jpg" alt="عباية سوداء مطرزة">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">499 ج.م</span>
+                            <span class="old-price">599 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/n1.jpg" alt="عباية سوداء مطرزة">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">499 ج.م</span>
+                            <span class="old-price">599 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/n4.jpg" alt="عباية سوداء مطرزة">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">499 ج.م</span>
+                            <span class="old-price">599 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-image">
+                        <img src="../imgs/n2.jpg" alt="عباية سوداء مطرزة">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية فرعوني مطرزة</h3>
+                        <div class="price">
+                            <span class="current-price">1569 ج.م</span>
+                            <span class="old-price">1999 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+                <!-- المنتج 2 -->
+                <div class="product-card">
+                    <div class="product-badge sale">خصم 20%</div>
+                    <div class="product-image">
+                        <img src="../imgs/n3.jpg" alt="عباية كحلي مزينة">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="far fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عباية كحلي مزينة</h3>
+                        <div class="price">
+                            <span class="current-price">449 ج.م</span>
+                            <span class="old-price">549 ج.م</span>
+                        </div>
+                        <button class="add-to-cart">أضف للسلة</button>
+                    </div>
+                </div>
+
+                <!-- باقي المنتجات بنفس الهيكل -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="women-footer">
+        <div class="footer-content">
+            <div class="footer-logo">الفراعنة ستورز</div>
+            <div class="footer-links">
+                <a href="../Privacy Policy.pdf">سياسة الخصوصية</a>
+                <a href="#">شروط الاستخدام</a>
+                <a href="../Frequently asked questions.pdf">الأسئلة الشائعة</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://web.facebook.com/profile.php?id=61574955834859&locale=ar_AR"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amr_nasrallhe/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wsend.co/201554889377"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 الفراعنة ستورز. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/women.js"></script>
+</body>
+</html>
